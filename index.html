@@ -20,233 +20,112 @@
 			margin: 0px;
 			padding: 0px;
 		}
+		.vertical-gap {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		.horizontal-gap {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
 		.box {
-			display: inline-block;
-			align-items: center;
+			border: 2.5px solid var(--background_text_color);
+		}
+		.space {
+			padding: 5px;
+		}
+		.round {
 			border-radius: 5px;
-			border: 1px solid var(--background_text_color);
-			width: 90%;
-			padding: 2.5%;
 		}
 		.header {
-			text-align: center;
-			margin: 2.5% 2.5% 2.5% 2.5%;
-		}
-		.header h2 {
-			font-size: 3.1rem;
-			margin: 5px 5px;
-		}
-		.header p {
 			font-size: 1.5rem;
-			margin: 5px 5px;
-		} 
-		.experience {
-			margin: 0% 2.5% 2.5% 2.5%;
+			font-weight: bolder;
 		}
-		.projects {
-			margin: 0% 2.5% 2.5% 2.5%;
+		.subheader {
+			font-size: 1.1rem;
+			font-weight: 400;
 		}
-		.education {
-			margin: 0% 2.5% 2.5% 2.5%;
+		.caption {
+			font-size: 0.8rem;
+			font-weight: 400;
 		}
-		.tools {
-			margin: 0% 2.5% 2.5% 2.5%;
-		}
-		.language {
-			margin: 0% 2.5% 2.5% 2.5%;
-		}
-		.about {
-			margin: 0% 2.5% 2.5% 2.5%;
-		}
-		.section-title {
-			font-size: 2rem;
-			margin: 5px 5px;
-		}
-		.section-content {
-			list-style-type: square;
-			margin: 10px;
-			padding: 10px;
+		.center {
+			text-align: center;
 		}
 	</style>
 </head>
-<body>
-	<script>
-		var typed = new Typed('.typed-out', {
-			strings: ['Karuppasamy Palanikumar', 'Full Stack Mobile Developer'],
-			typeSpeed: 50,
-			backSpeed: 50,
-			loop: true
-		});
-	</script>
-	<section class="header box">
-		<h2 class="typed-out">Karuppasamy Palanikumar</h2>
-		<p class="typed-out">Full Stack Mobile Developer</p>
+<body class="vertical-gap horizontal-gap">
+	<!-- Intro Section -->
+	<section class="box space">
+		<p class="header center space">Karuppasamy Palanikumar</p>
+		<p class="subheader center space">Full Stack Mobile Developer</p>
 	</section>
-	<section class="experience box">
-		<h4 class="section-title">Work Experience</h4>
-		<ul class="section-content">
-			<li>
-				<div>
-					<p>April 2022 - Present</p>
-					<p>Senior Software Engineer</p>
-					<p>Techjays</p>
-					<p>Coimbatore</p>
-				</div>
-			</li>
-			<li>
-				<div>
-					<p>Feb 2020 - April 2022</p>
-					<p>iOS Developer</p>
-					<p>Trioangle Technologies</p>
-					<p>Madurai</p>
-				</div>
-			</li>
-		</ul>
+	<!-- Work Experience Section -->
+	<section class="box space vertical-gap">
+		<p class="header center space">Work Experience</p>
+		<!-- Techjays Role -->
+		<p class="subheader center space">✿ 2022 April - Present ✿</p>
+		<p class="caption center space">Senior Software Developer</p>
+		<p class="caption center space">Techjays, Coimbatore</p>
+		<!-- Trioangle Role -->
+		<p class="subheader center space">✿ 2020 Feb - 2022 April ✿</p>
+		<p class="caption center space">iOS Developer</p>
+		<p class="caption center space">Trioangle Technologies, Madurai</p>
 	</section>
-	<section class="projects box">
-		<h4 class="section-title">Projects Done</h4>
-		<ul class="section-content">
-			<li>
-				<div>
-					<p>Arkose Labs iOS SDK</p>
-					<p>Senior Software Engineer</p>
-					<p>Techjays</p>
-					<p>Coimbatore</p>
-				</div>
-			</li>
-			<li>
-				<div>
-					<p>Vidrivals</p>
-					<p>Senior Software Engineer</p>
-					<p>Techjays</p>
-					<p>Coimbatore</p>
-				</div>
-			</li>
-			<li>
-				<div>
-					<p>ForceField</p>
-					<p>Senior Software Engineer</p>
-					<p>Techjays</p>
-					<p>Coimbatore</p>
-				</div>
-			</li>
-			<li>
-				<div>
-					<p>Aidendo</p>
-					<p>Senior Software Engineer</p>
-					<p>Techjays</p>
-					<p>Coimbatore</p>
-				</div>
-			</li>
-			<li>
-				<div>
-					<p>PUSH</p>
-					<p>Senior Software Engineer</p>
-					<p>Techjays</p>
-					<p>Coimbatore</p>
-				</div>
-			</li>
-			<li>
-				<div>
-					<p>Gofer Apps</p>
-					<p>Senior Software Engineer</p>
-					<p>Techjays</p>
-					<p>Coimbatore</p>
-				</div>
-			</li>
-		</ul>
+	<!-- Projects Handled Section -->
+	<section class="box space vertical-gap">
+		<p class="header center space">Projects Handled</p>
+		<!-- Arkose Project -->
+		<p class="subheader center space">✿ 2023 Dec - Present ✿</p>
+		<p class="caption center space">Arkose Labs SDK</p>
+		<!-- Aidendo Project -->
+		<p class="subheader center space">✿ 2023 June - 2023 Dec ✿</p>
+		<p class="caption center space">Aidendo</p>
+		<!-- Push Project -->
+		<p class="subheader center space">✿ 2023 April - 2023 June ✿</p>
+		<p class="caption center space">Push</p>
+		<!-- ShieldUP Project -->
+		<p class="subheader center space">✿ 2022 Feb - 2023 April ✿</p>
+		<p class="caption center space">ShieldUP</p>
+		<!-- Vidrivals Project -->
+		<p class="subheader center space">✿ 2022 April - 2023 Feb ✿</p>
+		<p class="caption center space">Vidrivals</p>
+		<!-- GoferJek Project -->
+		<p class="subheader center space">✿ 2022 Jan - 2022 April ✿</p>
+		<p class="caption center space">GoferJek</p>
+		<!-- GoferDelivery Project -->
+		<p class="subheader center space">✿ 2021 June - 2021 Dec ✿</p>
+		<p class="caption center space">GoferDelivery</p>
+		<!-- Gofer Project -->
+		<p class="subheader center space">✿ 2021 March - 2021 June ✿</p>
+		<p class="caption center space">Gofer</p>
+		<!-- GoferHandy Project -->
+		<p class="subheader center space">✿ 2020 March - 2021 March ✿</p>
+		<p class="caption center space">GoferHandy</p>
 	</section>
-	<section class="education box">
-		<h4 class="section-title">Education</h4>
-	<ul class="section-content">
-		<li>
-			<div>
-				<p>Sep 2014 - Jun 2018</p>
-				<p>B.E(EEE) - 7.89 CGPA</p>
-				<p>Kamaraj College of Engineering and Technologies</p>
-				<p>Virudhunagar</p>
-			</div>
-		</li>
-		<li>
-			<div>
-				<p>June 2013 - Mar 2014</p>
-				<p>HSE - 1055/1200</p>
-				<p>Sri Ramakrishna Vivekanada Higher Secondary School</p>
-				<p>Thirupunavasal</p>
-			</div>
-		</li>
-		<li>
-			<div>
-				<p>June 2011 - Mar 2012</p>
-				<p>SSLC - 426/500</p>
-				<p>Sri Ramakrishna Vivekanada Higher Secondary School</p>
-				<p>Thirupunavasal</p>
-			</div>
-		</li>
-	</ul>
-	</section>
-	<section class="tools box">
-		<h4 class="section-title">Tools</h4>
-		<div class="section-content">
-			<h5>Programming Language</h5>
-			<ul>
-				<li>Swift</li>
-				<li>Python</li>
-				<li>Java</li>
-				<li>HTMl</li>
-				<li>CSS</li>
-				<li>JS</li>
-				<li>C</li>
-			</ul>
-			<h5>IDE</h5>
-			<ul>
-				<li>Xcode</li>
-				<li>Android Studio</li>
-				<li>JetBrains IDEA</li>
-				<li>Visual Studio Code</li>
-			</ul>
-			<h5>DataBase</h5>
-			<ul>
-				<li>MySQL</li>
-				<li>Postgresql</li>
-				<li>SqlLite</li>
-			</ul>
-			<h5>Communication</h5>
-			<ul>
-				<li>BaseCamp</li>
-				<li>Slack</li>
-				<li>Gmail</li>
-			</ul>
-			<h5>Time Tracking</h5>
-			<ul>
-				<li>Jira</li>
-				<li>ClickUp</li>
-			</ul>
-			<h5>Version Control</h5>
-			<ul>
-				<li>Github</li>
-				<li>Gitlab</li>
-				<li>bitBuket</li>
-			</ul>
-		</div>
-	</section>
-	<section class="language box">
-		<h4 class="section-title">Language</h4>
-		<ul class="section-content">
-			<li>Tamil</li>
-			<li>English</li>
-			<li>German</li>
-			<li>Hindi</li>
-		</ul>
-	</section>
-	<section class="about box">
-		<h4 class="section-title">About Me</h4>
-		<div class="section-content">
-			<p>Karuppasamy Palanikumar</p>
-			<p>Full Stack Mobile Developer</p>
-			<p>9385710868</p>
-			<p>karuppasamypalanikumar.official@gmail.com</p>	
-		</div>
+	<!-- Education History Section -->
+	<section class="box space vertical-gap">
+		<p class="header center space">Academic History</p>
+		<!-- Bits Study -->
+		<p class="subheader center space">✿ 2023 Nov - Present ✿</p>
+		<p class="caption center space">M.Tech in Data Science and Engineering</p>
+		<p class="caption center space">7.5<sup>*</sup></p>
+		<p class="caption center space">Bits Pilani (WILP), Rajasthan</p>
+		<!-- Kamaraj College Study -->
+		<p class="subheader center space">✿ 2014 Jun - 2018 April ✿</p>
+		<p class="caption center space">B.E in Electrical and Electronics Engineering</p>
+		<p class="caption center space">7.79</p>
+		<p class="caption center space">Kamaraj College of Engineering and Technology, Virudhunagar</p>
+		<!-- 12th Study -->
+		<p class="subheader center space">✿ 2012 Jun - 2014 March ✿</p>
+		<p class="caption center space">Higher Secondary Certificate(HSC)</p>
+		<p class="caption center space">1055/1200</p>
+		<p class="caption center space">Sri Ramakrishna Vivekanandha Higher Seconday School, Thirupunavasal</p>
+		<!-- 10th Study -->
+		<p class="subheader center space">✿ 2011 Jun - 2012 March ✿</p>
+		<p class="caption center space">Secondary School Certificate(SSC)</p>
+		<p class="caption center space">426/500</p>
+		<p class="caption center space">Sri Ramakrishna Vivekanandha Higher Seconday School, Thirupunavasal</p>
 	</section>
 </body>
 </html>
